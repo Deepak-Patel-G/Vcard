@@ -22,13 +22,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function() {
 
     for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
+      if (this.innerHTML.toLowerCase() == "blog") {
+        window.location = "https://blog.deepakpatel.dev"
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+          pages[i].classList.add("active");
+          navigationLinks[i].classList.add("active");
+          window.scrollTo(0, 0);
+        } else {
+          pages[i].classList.remove("active");
+          navigationLinks[i].classList.remove("active");
+        }
       }
     }
 
