@@ -1,435 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Home - Deepak Patel</title>
+  </head>
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-59WSM6VQYT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-59WSM6VQYT');
-  </script>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Deepak Patel</title>
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/dp.png" alt="Deepak Patel" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Deepak Patel">Deepak Patel</h1>
-
-          <p class="title">Software Developer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:me@deepakpatel.dev" class="contact-link">me@deepakpatel.dev</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1997">1997</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Bengaluru, INDIA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/Deepak-Patel-G" target="_blank" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/deepak-patel-8a0817133" target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-        </ul>
-
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="https://github.com/Deepak-Patel-G" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/deepak-patel-8a0817133" target="_blank">LinkedIn</a>
       </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Software Developer from Bengaluru, INDIA. Super nerd who loves Vim, Gentoo Linux,
-            privacy and crypto enthusiast and builds local Server to store media since my mac has 128 GB storage.
-            Interested in building a better problem‑solving method for challenging tasks, and learning new technologies
-            and tools if the need arises.
-          </p>
-        </section>
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Build API</h4>
-
-                <p class="service-item-text">
-                  Efficent API with fast and minimal resource usage.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Applications for Android.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Backend: C#, ASP.Net, ASP.Net core, Django, FastAPI, REST API, Rust, Golang</h5>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Frontend: React, HTML5, SASS, CSS</h5>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Programming: Node.js, Python, JAVA, C++/C, Rust</h5>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Visvesvaraya Technological University</h4>
-
-              <span>2015 - 2019</span>
-
-              <p class="timeline-text">
-                B.Tech in Computer science and Engineering
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Developer, Finecho Engineering</h4>
-
-              <span>Sept. 2022 - Present</span>
-
-              <p class="timeline-text">
-                - Building application in go lang fiber and react.</br>
-                - Optimized backend data fetching algorithm.</br>
-                - Configured UI on to a minimal debian installation.</br>
-                - Created own custom debian iso.</br>
-                - Automated the custom debian iso installation using preseeding.</br>
-                - Worked on shell script.</br>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Development Engineer, Accenture India</h4>
-
-              <span>Dec. 2020 - Sept. 2022</span>
-
-              <p class="timeline-text">
-                - Built a OAuth 2.0 client Authentication system and integrated it with client and 3rd party(Auth0)
-                Authentication server.</br>
-                - Built a Authentication server for lower environments.</br>
-                - Designed and built URL shorten service.</br>
-                - Implemented reCaptcha v3 for site‑core forms.</br>
-                - Designed and built site‑core forms.</br>
-                - Trained associates on web development.</br>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Associate Software Engineer, Accenture India</h4>
-
-              <span>Sept. 2020 - Dec. 2020</span>
-
-              <p class="timeline-text">
-                - Implemented a worker process to send mails periodically.</br>
-                - Implemented a mail trap in lower environments.</br>
-                - Helped implementing a role and location access control for records.</br>
-                - Build a program to auto populate PDF forms.</br>
-                - Implemented a module to upload, download, delete files from Azure storage account and integrated this
-                with existing project.</br>
-                - Build a program to encrypt and decrypt files by fetching keys from AWS Key management service.</br>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">QA Associate, Accenture India</h4>
-
-              <span>Sept. 2019 - Sept. 2020</span>
-
-              <p class="timeline-text">
-                - Build a automation script in java for filling a 10 page form.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-      </article>
+    </header>
+    <hr>
+    <div class="block">
+      <h1>Deepak Patel</h1>
+      <h4>
+        Software Developer <br> 
+        <a href="mailto:me@deepakpatel.dev">me@deepakpatel.dev</a> <br>
+        Bengaluru, India <br>
+      </h4> 
+    </div>
+    <div class="content">
+      
+      <div class="block">
+        <h2>About me</h2>
+        <p class="justify">
+          I'm Software Developer from Bengaluru, INDIA. Super nerd who loves Vim, Gentoo Linux, privacy and crypto
+          enthusiast and builds local Server to store media since my mac has 128 GB storage. Interested in building a better
+          problem‑solving method for challenging tasks, and learning new technologies and tools if the need arises.
+        </p>
+      </div>
+
+      <div class="block">
+        <h2>Exprience</h2>
+        <ul class="justify">
+          <li>
+            <b>Software Developer, Finecho Engineering</b>
+            <aside>Sept. 2022 - Present</aside>
+            <ul>
+              <li>Building application in go lang fiber and react.</li>
+              <li>Optimized backend data fetching algorithm.</li>
+              <li>Configured UI on to a minimal debian installation.</li>
+              <li>Created own custom debian iso.</li>
+              <li>Automated the custom debian iso installation using preseeding.</li>
+              <li>Worked on shell script.</li>
+            </ul>
+          </li>
+
+          <br>
+          
+          <li>
+            <b>Development Engineer, Accenture India</b>
+            <aside>Dec. 2020 - Sept. 2022</aside>
+            <ul>
+              <li>Built a OAuth 2.0 client Authentication system and integrated it with 
+                client and 3rd party(Auth0) Authentication server.</li>
+              <li>Built a Authentication server for lower environments.</li>
+              <li>Designed and built URL shorten service.</li>
+              <li> Implemented reCaptcha v3 for site‑core forms.</li>
+              <li>Designed and built site‑core forms.</li>
+              <li>Trained associates on web development.</li>
+            </ul>
+          </li>
+
+          <br>
+
+          <li>
+            <b>Associate Software Engineer, Accenture India</b>
+            <aside>Sept. 2020 - Dec. 2020</aside>
+            <ul>
+              <li> Implemented a worker process to send mails periodically.</li>
+              <li>Implemented a mail trap in lower environments.</li>
+              <li>Helped implementing a role and location access control for records.</li>
+              <li>Build a program to auto populate PDF forms.</li>
+              <li>Implemented a module to upload, download, delete files from Azure storage account and integrated this with
+                existing project.</li>
+              <li>Build a program to encrypt and decrypt files by fetching keys from AWS Key management service.</li>
+            </ul>
+          </li>
+          
+          <br>
+            
+          <li>
+            <b>QA Associate, Accenture India </b>
+            <aside>Sept. 2019 - Sept. 2020</aside>
+            <ul>
+              <li>Build a automation script in java for filling a 10 page form.</li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+
+
+      <div class="block">
+        <h2>Education</h2>
+        <div class="justify">
+          <b>Visvesvaraya Technological University</b>
+          <p>2015 - 2019</p>
+          <p>B.Tech in Computer science and Engineering</p>
+        </div>
+      </div>
 
     </div>
+    <!-- content end -->
 
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+  </body>
 
 </html>
