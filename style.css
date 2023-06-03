@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 body {
@@ -46,6 +47,7 @@ h2 {
 
 .block {
   margin: 1%;
+  padding: 1% 0;
 }
 
 @media only screen and (max-width: 600px) {
