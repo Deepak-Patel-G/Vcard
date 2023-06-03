@@ -17,6 +17,7 @@ nav {
 a {
   text-decoration: none;
   padding: 10px;
+  color: blue;
 }
 
 a:hover {
@@ -26,7 +27,7 @@ a:hover {
 }
 
 a:visited {
-  color: black;
+  color: blue;
 }
 
 aside {
