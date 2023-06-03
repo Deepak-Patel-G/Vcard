@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+nav {
+  font-size: 18px;
+  text-align: right;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+a:visited {
+  color: black;
+}
+
+aside {
+  color: gray;
+}
+
+h2 {
+  text-align: left;  
+  margin-bottom: 5px;
+}
+
+.content {
+  padding: 0 15%;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.block {
+  margin: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  a {
+    display: block;
+    text-align: center;
+  }
+}
