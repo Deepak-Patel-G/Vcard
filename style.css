@@ -5,7 +5,14 @@
 }
 
 body {
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
   text-align: center;
+  background: #1d1f21;
+  color: whitesmoke;
+  padding: 4% 2%;
 }
 
 nav {
@@ -17,12 +24,11 @@ nav {
 a {
   text-decoration: none;
   padding: 10px;
-  color: blue;
+  color: #2bbc89;
 }
 
 a:hover {
   text-decoration: underline;
-  color: red;
   cursor: pointer;
 }
 
@@ -30,7 +36,7 @@ aside {
   color: gray;
 }
 
-h2 {
+h3 {
   text-align: left;  
   margin-bottom: 5px;
 }
@@ -43,6 +49,10 @@ h2 {
   text-align: justify;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .block {
   margin: 1%;
   padding: 1% 0;
@@ -50,6 +60,21 @@ h2 {
 
 .nopad {
   padding: 0;
+}
+
+.logo {
+  fill: #8c92ac;
+  transition: fill 0.3s; 
+}
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+}
+
+header:hover .logo{
+  fill: #cf352e;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
