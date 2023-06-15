@@ -4,32 +4,49 @@
   line-height: 1.5;
 }
 
-body {
+html {
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
   margin-left: auto;
   margin-right: auto;
   max-width: 60%;
-  text-align: center;
   background: #1d1f21;
   color: whitesmoke;
   padding: 4% 2%;
+  padding-bottom: 0;
 }
 
 nav {
-  font-size: 18px;
+  font-size: 14px;
   text-align: right;
   padding: 10px;
 }
 
-a {
+section p,b,li {
+  font-size: 14px;
+}
+
+.nav-links {
   text-decoration: none;
-  padding: 10px;
+  padding: 0 1rem;
   color: #2bbc89;
 }
 
-a:hover {
+.nav-links:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.icon-links {
+  color: #e5e7eb;
+  padding: 0 1rem;
+}
+
+.icon-links:hover .change-color {
+  color: #d480aa;
+}
+
+.icon-links:hover .change-fill {
+  fill: #d480aa;
 }
 
 aside {
@@ -41,10 +58,6 @@ h3 {
   margin-bottom: 5px;
 }
 
-.content {
-  padding: 0 15%;
-}
-
 .justify {
   text-align: justify;
 }
@@ -53,13 +66,12 @@ h3 {
   text-align: center;
 }
 
-.block {
-  margin: 1%;
-  padding: 1% 0;
-}
-
 .nopad {
   padding: 0;
+}
+
+.block {
+  margin-top: 1rem;
 }
 
 .logo {
@@ -72,7 +84,31 @@ h3 {
   gap: 10px;
 }
 
-header:hover .logo{
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.slash {
+  border-right: dotted 2px #2bbc89;
+}
+
+section {
+  margin-top: 4rem; 
+}
+
+.logo:hover{
   fill: #cf352e;
   cursor: pointer;
 }
@@ -82,4 +118,65 @@ header:hover .logo{
     display: flex;
     justify-content: end;
   }
+}
+
+
+footer {
+  font-size: 12px;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  color: #6b7280;
+}
+
+.nav-links-footer {
+  font-size: 12px;
+  text-decoration: none;
+  padding: 0 1rem;
+  color: #6b7280;
+}
+
+.nav-links-footer:hover {
+  color: #c9cacc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.slash-footer {
+  border-right: solid 2px #6b7280;
+}
+
+
+.list ul {
+  list-style: none;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.blog-link {
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.blog-link:hover {
+  text-decoration-color: #d480aa;
+  text-decoration-thickness: 2px;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.list .item {
+  margin-bottom: 2rem;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.blog-time {
+  color: #6b7280;
+  margin-right: 2rem;
 }
