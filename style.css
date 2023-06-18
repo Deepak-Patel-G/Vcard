@@ -41,6 +41,10 @@ section p,b,li {
   padding: 0 1rem;
 }
 
+.link {
+  color: #2bbc89;
+}
+
 .icon-links:hover .change-color {
   color: #d480aa;
 }
@@ -75,8 +79,19 @@ h3 {
 }
 
 .logo {
-  fill: #8c92ac;
-  transition: fill 0.3s; 
+  cursor: pointer;
+  transition: width 4s, height 4s; 
+  transition-timing-function: linear;
+}
+
+.logo-parent {
+  height: 100px;
+  width: 100px;
+}
+
+.logo:hover {
+  height: 100px;
+  width: 100px;
 }
 
 .flex-container {
@@ -106,11 +121,6 @@ h3 {
 
 section {
   margin-top: 4rem; 
-}
-
-.logo:hover{
-  fill: #cf352e;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
